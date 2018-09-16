@@ -112,10 +112,21 @@
   </div>
   </div>
   <br />
-  <button type="submit" class="btn btn-primary">Donate Now</button>
+  <button type="submit" onClick="stellar.js" class="btn btn-primary">Donate Now</button>
 </form>
+
               </div>
           </div>
+
+          <form id="link-form-id" method="GET"></form>
+          <script
+                  src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"
+                  data-client-name="Client Name"
+                  data-form-id="link-form-id"
+                  data-key="7846e34744ab3e59bc4cbb0ee901a9"
+                  data-product="auth"
+                  data-env="sandbox">
+          </script>
       </div>
 
 
@@ -228,6 +239,7 @@
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
+<script src="js/stellar.js"></script>
 
 <!-- Custom scripts for this template -->
 <script src="js/clean-blog.min.js"></script>
