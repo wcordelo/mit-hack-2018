@@ -1,10 +1,11 @@
-const mysql = require('mysql');
-
-module.exports = () => {
-    return mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'password',
-        database: 'user_portal'
-    });
-}
+// config/database.js
+module.exports = {
+    'connection': {
+        'host': 'localhost',
+        'user': 'root',
+        'password': 'password',
+        'port': 	  3306, 		// default MySQL port
+    },
+    'database': 'user_portal',
+    'users_table': 'users'
+};
