@@ -1,9 +1,28 @@
-var express = require('express');
-var router = express.Router();
+const dbConnection = require('../config/dbConnection');
 
-/* GET users listing. */
-router.get('/', function (req, res, next) {
-    res.send('respond with a resource');
+module.exports = app => {
+
+    const connection = dbConnection();
+
+    app.get('/users', (req, res) => {
+        console.log('GET')
+        connection.query('SELECT * FROM users', (err, result) => {
+        res.render('users', {
+        users: result
+    });
+});
 });
 
-module.exports = router;
+    app.post('/users', (req, res) => {
+        console.log("POST")
+        const { username, password } = req.body;
+    connection.query('INSERT INTO users SET ? ',
+        {
+            username,
+            password
+        }
+        , (err, result) => {
+        res.redirect('/users');
+});
+});
+};
