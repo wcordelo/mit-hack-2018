@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SmartRelief - Donations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="home.ejs">SmartRelief</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Donations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">My Portal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('https://financialtribune.com/sites/default/files/field/image/12_Helping%20Others.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>Every Donation Makes a Difference</h1>
+              <span class="meta">using
+                <a href="https://www.plaid.com">PLAID</a>
+                and <a href="https://www.stellar.com">STELLAR</a>
+                financial services.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="center container">
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3">
+        <center><strong> Login to your Account</strong>
+
+        <div class="card-header">
+        <form>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter Username</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your username">
+  </div>
+  <br />
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+</div>
+</div>
+    </div>
+
+    <div class="col">
+      <div class="card mb-3">
+        <center><strong> Create an Account</strong>
+
+        <div class="card-header">
+        <form>
+
+  <div class="form-group">
+    <div class = "row">
+      <div class = "col">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your full name">
+      </div>
+      <div class="col">
+    <label for="exampleInputEmail1">Username</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Choose a username">
+    </div>
+</div>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Choose a Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Create an Account</button>
+</form>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+    <!-- DataTables Example -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+    <div class="card mb-3">
+      <div class="card-header">
+        <i class="fas fa-table"></i>
+        Hurricane Florence Relief Effort</div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Amount Donated</th>
+                <th>Initials</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Date</th>
+                <th>Amount Donated</th>
+                <th>Initials</th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>09/17/2018</td>
+                <td>$35.00</td>
+                <td>R.V</td>
+              </tr>
+              <tr>
+                <td>09/16/2018</td>
+                <td>$90.00</td>
+                <td>W.L</td>
+              </tr><tr>
+                <td>09/15/2018</td>
+                <td>$120.00</td>
+                <td>T.H</td>
+              </tr><tr>
+                <td>09/15/2018</td>
+                <td>$10.00</td>
+                <td>B.B</td>
+              </tr><tr>
+                <td>09/15/2018</td>
+                <td>$50.00</td>
+                <td>R.E</td>
+              </tr><tr>
+                <td>09/15/2018</td>
+                <td>$25.00</td>
+                <td>E.T</td>
+              </tr><tr>
+                <td>09/14/2018</td>
+                <td>$5.00</td>
+                <td>V.G</td>
+              </tr><tr>
+                <td>09/14/2018</td>
+                <td>$10.00</td>
+                <td>I.A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer small text-muted">Updated today at 10:05 AM</div>
+    </div>
+  </div>
+  <div class="col">
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fas fa-table"></i>
+    Hurricane Maria Relief Effort</div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Amount Donated</th>
+            <th>Initials</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th>Date</th>
+            <th>Amount Donated</th>
+            <th>Initials</th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>02/10/2018</td>
+            <td>$20.00</td>
+            <td>A.V</td>
+          </tr>
+          <tr>
+            <td>01/04/2018</td>
+            <td>$15.00</td>
+            <td>Q.C</td>
+          </tr><tr>
+            <td>01/02/2018</td>
+            <td>$350.00</td>
+            <td>J.L</td>
+          </tr><tr>
+            <td>12/14/2017</td>
+            <td>$59.00</td>
+            <td>J.C</td>
+          </tr><tr>
+            <td>12/11/2017</td>
+            <td>$75.00</td>
+            <td>M.G</td>
+          </tr><tr>
+            <td>11/28/2017</td>
+            <td>$100.00</td>
+            <td>P.C</td>
+          </tr><tr>
+            <td>11/21/2017</td>
+            <td>$18.00</td>
+            <td>X.M</td>
+          </tr><tr>
+            <td>10/29/2017</td>
+            <td>$25.00</td>
+            <td>J.S</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card-footer small text-muted">Updated today at 10:05 AM</div>
+</div>
+</div>
+</div>
+</div>
+
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; HackMIT 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
